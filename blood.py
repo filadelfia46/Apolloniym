@@ -37,12 +37,41 @@ def chengtext1():
             r1 = round(((co[0]-x)**2+(co[1]-y)**2)**0.5)+ co[2]
             r2 = round(((co[3]-x)**2+(co[4]-y)**2)**0.5) + co[5]
             r3 = round(((co[6]-x)**2+(co[7]-y)**2)**0.5)+co[8]
-            if r1==r2==r3 or r10==r20==r3 or r10==r2==r3 or r1==r20==r30 or r10==r2==r30 or r1==r20==r3 or r1==r2==r30 or r10==r20==r30:
-
-    
+            if r1==r2==r3: #or r10==r20==r3 or r10==r2==r3 or r1==r20==r30 or r10==r2==r30 or r1==r20==r3 or r1==r2==r30 or r10==r20==r30:
                 s1 = canvas.create_oval(x+r1,y+r1,x-r1,y-r1,outline='#'+str(a-t))
                 t=random.randint(0,19100)
-            
+                
+            if r10==r20==r3:
+                r1 = r10
+                s1 = canvas.create_oval(x+r1,y+r1,x-r1,y-r1,outline='#'+str(a-t))
+                t=random.randint(0,19100)
+                
+            if r10==r2==r3:
+                r1 = r10
+                s1 = canvas.create_oval(x+r1,y+r1,x-r1,y-r1,outline='#'+str(a-t))
+                t=random.randint(0,19100)
+                
+            if r1==r20==r30:
+                s1 = canvas.create_oval(x+r1,y+r1,x-r1,y-r1,outline='#'+str(a-t))
+                t=random.randint(0,19100)
+                
+            if r10==r2==r30:
+                r1 = r10
+                s1 = canvas.create_oval(x+r1,y+r1,x-r1,y-r1,outline='#'+str(a-t))
+                t=random.randint(0,19100)
+                
+            if  r1==r20==r3:
+                s1 = canvas.create_oval(x+r1,y+r1,x-r1,y-r1,outline='#'+str(a-t))
+                t=random.randint(0,19100)
+                
+            if r1==r2==r30:
+                s1 = canvas.create_oval(x+r1,y+r1,x-r1,y-r1,outline='#'+str(a-t))
+                t=random.randint(0,19100)
+                
+            if r10==r20==r30:
+                r1 = r10
+                s1 = canvas.create_oval(x+r1,y+r1,x-r1,y-r1,outline='#'+str(a-t))
+                t=random.randint(0,19100)
 
                
 
